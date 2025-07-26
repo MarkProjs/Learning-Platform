@@ -1,0 +1,35 @@
+.progress-container {
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.progress-label {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #0074D9;
+  transition: width 0.4s ease-in-out;
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+  .progress-label {
+    font-size: 0.8rem;
+  }
+  .progress-bar {
+    height: 8px;
+  }
+}

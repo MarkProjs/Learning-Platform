@@ -1,0 +1,35 @@
+.overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  height: calc(100vh - 200px);
+  background-color: #f9f9f9;
+}
+
+.start-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0074D9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: #005fa3;
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+  .overview {
+    padding: 1rem;
+  }
+  .start-btn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+}

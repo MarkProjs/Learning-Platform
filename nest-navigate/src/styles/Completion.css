@@ -1,0 +1,53 @@
+.completion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  height: calc(100vh - 200px);
+  background-color: #f9f9f9;
+}
+
+.coin-animation {
+  font-size: 2rem;
+  margin: 2rem 0;
+  animation: pop 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.home-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #0074D9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background-color: #005fa3;
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+  .completion {
+    padding: 1.5rem;
+  }
+  .coin-animation {
+    font-size: 1.5rem;
+  }
+  .home-btn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+}
